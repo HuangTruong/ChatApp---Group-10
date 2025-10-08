@@ -42,6 +42,10 @@
             this.txtFullname = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbNgaySinh = new System.Windows.Forms.Label();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +54,7 @@
             this.lblTittle.AutoSize = true;
             this.lblTittle.BackColor = System.Drawing.Color.White;
             this.lblTittle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTittle.Location = new System.Drawing.Point(62, 38);
+            this.lblTittle.Location = new System.Drawing.Point(63, 20);
             this.lblTittle.Name = "lblTittle";
             this.lblTittle.Size = new System.Drawing.Size(287, 38);
             this.lblTittle.TabIndex = 0;
@@ -114,6 +118,10 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.White;
+            this.guna2CustomGradientPanel1.Controls.Add(this.cbGioiTinh);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtNgaySinh);
+            this.guna2CustomGradientPanel1.Controls.Add(this.lbNgaySinh);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtEmail);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtConfirmPassword);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtPassword);
@@ -131,7 +139,7 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(411, 422);
             this.guna2CustomGradientPanel1.TabIndex = 6;
-            this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            //this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
             // txtEmail
             // 
@@ -242,11 +250,12 @@
             this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(217, 315);
+            this.btnBack.Location = new System.Drawing.Point(216, 368);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(180, 45);
             this.btnBack.TabIndex = 7;
             this.btnBack.Text = "Quay lại đăng nhập";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRegister
             // 
@@ -257,11 +266,46 @@
             this.btnRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(17, 315);
+            this.btnRegister.Location = new System.Drawing.Point(6, 368);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(180, 45);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Đăng kí";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Giới tính";
+   
+            // 
+            // lbNgaySinh
+            // 
+            this.lbNgaySinh.AutoSize = true;
+            this.lbNgaySinh.Location = new System.Drawing.Point(35, 330);
+            this.lbNgaySinh.Name = "lbNgaySinh";
+            this.lbNgaySinh.Size = new System.Drawing.Size(132, 16);
+            this.lbNgaySinh.TabIndex = 14;
+            this.lbNgaySinh.Text = "Ngày tháng năm sinh";
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Location = new System.Drawing.Point(189, 330);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(189, 22);
+            this.txtNgaySinh.TabIndex = 15;
+            // 
+            // cbGioiTinh
+            // 
+            this.cbGioiTinh.FormattingEnabled = true;
+            this.cbGioiTinh.Location = new System.Drawing.Point(189, 295);
+            this.cbGioiTinh.Name = "cbGioiTinh";
+            this.cbGioiTinh.Size = new System.Drawing.Size(189, 24);
+            this.cbGioiTinh.TabIndex = 16;
             // 
             // Register
             // 
@@ -271,7 +315,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "Register";
             this.Text = "Register";
-            this.Load += new System.EventHandler(this.Register_Load);
+            //this.Load += new System.EventHandler(this.Register_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -294,5 +338,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtFullname;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Button btnRegister;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNgaySinh;
+        private System.Windows.Forms.Label lbNgaySinh;
+        private System.Windows.Forms.ComboBox cbGioiTinh;
     }
 }

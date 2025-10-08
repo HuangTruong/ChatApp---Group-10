@@ -16,5 +16,10 @@ namespace ChatApp
         {
             InitializeComponent();
         }
+
+        private void ForgetPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

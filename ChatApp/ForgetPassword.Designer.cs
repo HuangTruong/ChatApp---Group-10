@@ -146,6 +146,7 @@
             this.Controls.Add(this.pnlForgetPassword);
             this.Name = "ForgetPassword";
             this.Text = "ForgetPassword";
+            this.Load += new System.EventHandler(this.ForgetPassword_Load);
             this.pnlForgetPassword.ResumeLayout(false);
             this.pnlForgetPassword.PerformLayout();
             this.ResumeLayout(false);

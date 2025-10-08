@@ -93,6 +93,7 @@
             this.lnkForgetPassword.TabIndex = 1;
             this.lnkForgetPassword.TabStop = true;
             this.lnkForgetPassword.Text = "Quên mật khẩu";
+            this.lnkForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkForgetPassword_LinkClicked);
             // 
             // btnRegister
             // 
@@ -108,6 +109,7 @@
             this.btnRegister.Size = new System.Drawing.Size(134, 45);
             this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "Đăng ký";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnLogin
             // 
@@ -123,6 +125,7 @@
             this.btnLogin.Size = new System.Drawing.Size(134, 45);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 

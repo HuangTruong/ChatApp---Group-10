@@ -3,18 +3,33 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 using System.Windows.Forms;
 
 namespace ChatApp
 {
     public partial class Login : Form
     {
+        private IFirebaseClient firebaseClient;
         public Login()
         {
             InitializeComponent();
+            // Khởi tạo cấu hình Firebase
+            IFirebaseConfig config = new FirebaseConfig
+            {
+                AuthSecret = "PFejsR6CHWL2zIGqFqZ1w3Orw0ljzeHnHubtuQN8",
+                BasePath = "https://fir-client-1d344-default-rtdb.firebaseio.com/"
+            };
+
+            // Khởi tạo FirebaseClient
+            firebaseClient = new FireSharp.FirebaseClient(config);
         }
 
         private void Form1_Load(object sender, EventArgs e)

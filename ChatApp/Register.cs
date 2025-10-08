@@ -21,5 +21,10 @@ namespace ChatApp
         {
 
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

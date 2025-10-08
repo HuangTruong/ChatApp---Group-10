@@ -35,5 +35,10 @@ namespace ChatApp
             resetPassword.Show();
             this.Close();
         }
+
+        private void VerifyCode_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

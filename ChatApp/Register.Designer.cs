@@ -1,6 +1,6 @@
 ﻿namespace ChatApp
 {
-    partial class register
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.

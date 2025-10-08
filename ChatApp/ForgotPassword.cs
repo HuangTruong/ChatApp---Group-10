@@ -33,5 +33,10 @@ namespace ChatApp
             verify.Show();
             this.Close();
         }
+
+        private void ForgotPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

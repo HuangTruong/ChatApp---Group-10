@@ -11,6 +11,7 @@ D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.exe
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.pdb
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.exe.config
+<<<<<<< HEAD
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe.config
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.pdb
@@ -28,3 +29,40 @@ C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.registe
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.ForgotPassword.resources
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.VerifyCode.resources
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatAppneeus.ResetPassword.resources
+=======
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.ForgetPassword.resources
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Login.resources
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Register.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe.config
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.pdb
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\FireSharp.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Guna.UI2.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.App.config
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.AssemblyReference.cache
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.exe.config
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.ForgetPassword.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Properties.Resources.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.GenerateResource.cache
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.CoreCompileInputs.cache
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.Up2Date
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.exe
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.pdb
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Login.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Register.resources
+>>>>>>> ad7ae01 (Luu tam)
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatAppneeus.ResetPassword.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.VerifyCode.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.ForgotPassword.resources

@@ -39,5 +39,10 @@ namespace ChatAppneeus
                 this.Close();
             }
         }
+
+        private void ResetPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

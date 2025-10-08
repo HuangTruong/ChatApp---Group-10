@@ -87,8 +87,6 @@ namespace ChatApp
                     return;
                 }
 
-                // (Tùy bạn có cần kiểm tra "Password trùng" hay không; thường KHÔNG nên)
-
                 var newUser = new UserDk
                 {
                     TaiKhoan = taiKhoan,
@@ -99,7 +97,7 @@ namespace ChatApp
                     Gioitinh = gioitinh
                 };
 
-                // ✅ SetAsync + await
+                
                 await firebaseClient.SetAsync($"users/{taiKhoan}", newUser);
                 await firebaseClient.SetAsync($"emails/{encodedEmail}", true);
                 await firebaseClient.SetAsync($"Username/{username}", true);
@@ -121,6 +119,11 @@ namespace ChatApp
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
     public class UserDk

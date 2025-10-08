@@ -35,6 +35,10 @@
             this.lblConfirmPassword = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.lbNgaySinh = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,10 +46,6 @@
             this.txtFullname = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegister = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbNgaySinh = new System.Windows.Forms.Label();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
-            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,7 +139,39 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(411, 422);
             this.guna2CustomGradientPanel1.TabIndex = 6;
-            //this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // cbGioiTinh
+            // 
+            this.cbGioiTinh.FormattingEnabled = true;
+            this.cbGioiTinh.Location = new System.Drawing.Point(189, 295);
+            this.cbGioiTinh.Name = "cbGioiTinh";
+            this.cbGioiTinh.Size = new System.Drawing.Size(189, 24);
+            this.cbGioiTinh.TabIndex = 16;
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Location = new System.Drawing.Point(189, 330);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Size = new System.Drawing.Size(189, 22);
+            this.txtNgaySinh.TabIndex = 15;
+            // 
+            // lbNgaySinh
+            // 
+            this.lbNgaySinh.AutoSize = true;
+            this.lbNgaySinh.Location = new System.Drawing.Point(35, 330);
+            this.lbNgaySinh.Name = "lbNgaySinh";
+            this.lbNgaySinh.Size = new System.Drawing.Size(132, 16);
+            this.lbNgaySinh.TabIndex = 14;
+            this.lbNgaySinh.Text = "Ngày tháng năm sinh";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Giới tính";
             // 
             // txtEmail
             // 
@@ -273,40 +305,6 @@
             this.btnRegister.Text = "Đăng kí";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 295);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Giới tính";
-   
-            // 
-            // lbNgaySinh
-            // 
-            this.lbNgaySinh.AutoSize = true;
-            this.lbNgaySinh.Location = new System.Drawing.Point(35, 330);
-            this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(132, 16);
-            this.lbNgaySinh.TabIndex = 14;
-            this.lbNgaySinh.Text = "Ngày tháng năm sinh";
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.Location = new System.Drawing.Point(189, 330);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(189, 22);
-            this.txtNgaySinh.TabIndex = 15;
-            // 
-            // cbGioiTinh
-            // 
-            this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(189, 295);
-            this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(189, 24);
-            this.cbGioiTinh.TabIndex = 16;
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -315,7 +313,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "Register";
             this.Text = "Register";
-            //this.Load += new System.EventHandler(this.Register_Load);
+            this.Load += new System.EventHandler(this.Register_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);

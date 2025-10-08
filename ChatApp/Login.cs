@@ -71,7 +71,7 @@ namespace ChatApp
             }
         }
 
-        // ⭐ SỬA 1: event handler dùng await thì phải async void
+       
         private async void btnLogin_Click(object sender, EventArgs e)
         {
             string taiKhoan = txtUsername.Text;
@@ -92,7 +92,7 @@ namespace ChatApp
 
             try
             {
-                // ⭐ SỬA 2: dùng await hợp lệ trong async method
+                
                 FirebaseResponse userResponse = await firebaseClient.GetAsync($"users/{taiKhoan}");
 
                 if (userResponse.Body == "null")
@@ -102,7 +102,7 @@ namespace ChatApp
                     return;
                 }
 
-                // ⭐ SỬA 3: có class User để map dữ liệu
+                
                 var user = userResponse.ResultAs<User>();
 
                 if (user.MatKhau != matKhau)
@@ -119,7 +119,7 @@ namespace ChatApp
                 txtPassword.Text = "";
                 this.Hide();
             }
-            // ⭐ SỬA 4: bổ sung catch để hết CS1524
+            
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi đăng nhập: " + ex.Message, "Lỗi",

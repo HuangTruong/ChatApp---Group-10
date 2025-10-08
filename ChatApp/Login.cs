@@ -63,11 +63,5 @@ namespace ChatApp
                 isPasswordVisible = false;
             }
         }
-
-        private void pnlLogin_Paint(object sender, PaintEventArgs e)
-        {
-            pnlLogin.Left = (this.ClientSize.Width - pnlLogin.Width) / 2;
-            pnlLogin.Top = (this.ClientSize.Height - pnlLogin.Height) / 2;
-        }
     }
 }

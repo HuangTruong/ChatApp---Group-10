@@ -3,7 +3,6 @@ D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\bin\Debug\ChatApp.
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\bin\Debug\ChatApp.pdb
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\bin\Debug\Guna.UI2.dll
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.csproj.AssemblyReference.cache
-D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Form1.resources
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Properties.Resources.resources
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.csproj.GenerateResource.cache
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.csproj.CoreCompileInputs.cache
@@ -11,16 +10,6 @@ D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.exe
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.pdb
 D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.exe.config
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe.config
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.exe
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\ChatApp.pdb
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\bin\Debug\Guna.UI2.dll
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.AssemblyReference.cache
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.exe.config
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Login.resources
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Properties.Resources.resources
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.GenerateResource.cache
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.CoreCompileInputs.cache
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.Up2Date
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.exe
-C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.pdb
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.ForgetPassword.resources
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Login.resources
+D:\Hoc\NT106 - Lập trình mạng căn bản\ChatApp\ChatApp\obj\Debug\ChatApp.Register.resources

@@ -40,9 +40,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 34);
+            this.label2.Location = new System.Drawing.Point(16, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(289, 31);
+            this.label2.Size = new System.Drawing.Size(355, 39);
             this.label2.TabIndex = 7;
             this.label2.Text = "Reset your password";
             // 
@@ -50,9 +51,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 89);
+            this.label1.Location = new System.Drawing.Point(19, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 24);
+            this.label1.Size = new System.Drawing.Size(186, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nhập mật khẩu";
             // 
@@ -60,9 +62,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 133);
+            this.label3.Location = new System.Drawing.Point(19, 164);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 24);
+            this.label3.Size = new System.Drawing.Size(232, 29);
             this.label3.TabIndex = 9;
             this.label3.Text = "Xác nhận mật khẩu";
             // 
@@ -77,11 +80,12 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(312, 76);
+            this.guna2TextBox1.Location = new System.Drawing.Point(416, 94);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(267, 44);
             this.guna2TextBox1.TabIndex = 10;
             // 
             // guna2TextBox2
@@ -95,11 +99,12 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(312, 121);
+            this.guna2TextBox2.Location = new System.Drawing.Point(416, 149);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox2.Size = new System.Drawing.Size(267, 44);
             this.guna2TextBox2.TabIndex = 11;
             // 
             // btOK
@@ -110,26 +115,29 @@
             this.btOK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btOK.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOK.ForeColor = System.Drawing.Color.White;
-            this.btOK.Location = new System.Drawing.Point(18, 178);
+            this.btOK.Location = new System.Drawing.Point(24, 219);
+            this.btOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btOK.Name = "btOK";
-            this.btOK.Size = new System.Drawing.Size(200, 45);
+            this.btOK.Size = new System.Drawing.Size(267, 55);
             this.btOK.TabIndex = 12;
             this.btOK.Text = "OK";
             this.btOK.Click += new System.EventHandler(this.btOK_Click);
             // 
             // ResetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 252);
+            this.ClientSize = new System.Drawing.Size(760, 310);
             this.Controls.Add(this.btOK);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ResetPassword";
             this.Text = "ResetPassword";
+            this.Load += new System.EventHandler(this.ResetPassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

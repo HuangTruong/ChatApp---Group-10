@@ -63,3 +63,6 @@ C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.pdb
 C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Login.resources
 C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.Register.resources
 >>>>>>> ad7ae01 (Luu tam)
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatAppneeus.ResetPassword.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.VerifyCode.resources
+C:\Users\Dell\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.ForgotPassword.resources

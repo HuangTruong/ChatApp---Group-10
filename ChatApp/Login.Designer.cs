@@ -133,6 +133,7 @@
             this.btnLogin.Size = new System.Drawing.Size(100, 37);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 

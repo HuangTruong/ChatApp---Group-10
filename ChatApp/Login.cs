@@ -6,8 +6,6 @@ using FireSharp.Response;
 
 namespace ChatApp
 {
-    
-
     public partial class Login : Form
     {
         private IFirebaseClient firebaseClient;
@@ -84,7 +82,7 @@ namespace ChatApp
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            // optional
+            
         }
 
         // Mở form Đăng ký
@@ -105,7 +103,7 @@ namespace ChatApp
             this.Hide();
         }
 
-        // Đăng nhập (async)
+       
         private async void btnLogin_Click(object sender, EventArgs e)
         {
             string taiKhoan = txtUsername.Text;

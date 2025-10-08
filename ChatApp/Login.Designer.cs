@@ -59,7 +59,7 @@
             this.pnlLogin.Controls.Add(this.lblTittle);
             this.pnlLogin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlLogin.Location = new System.Drawing.Point(156, 10);
-            this.pnlLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLogin.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(316, 352);
             this.pnlLogin.TabIndex = 0;
@@ -69,7 +69,7 @@
             // 
             this.picShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picShowPassword.Location = new System.Drawing.Point(266, 165);
-            this.picShowPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picShowPassword.Margin = new System.Windows.Forms.Padding(2);
             this.picShowPassword.Name = "picShowPassword";
             this.picShowPassword.Size = new System.Drawing.Size(23, 28);
             this.picShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -81,7 +81,7 @@
             // 
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.Location = new System.Drawing.Point(106, 209);
-            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(2);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(138, 23);
             this.chkShowPassword.TabIndex = 10;
@@ -99,6 +99,7 @@
             this.lnkForgetPassword.TabIndex = 1;
             this.lnkForgetPassword.TabStop = true;
             this.lnkForgetPassword.Text = "Quên mật khẩu";
+            this.lnkForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkForgetPassword_LinkClicked);
             // 
             // btnRegister
             // 
@@ -110,11 +111,12 @@
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(180, 244);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(100, 37);
             this.btnRegister.TabIndex = 9;
             this.btnRegister.Text = "Đăng ký";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnLogin
             // 
@@ -126,7 +128,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(39, 244);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 37);
             this.btnLogin.TabIndex = 8;
@@ -172,6 +174,7 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(151, 28);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // lblPassword
             // 
@@ -212,7 +215,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(773, 443);
             this.Controls.Add(this.pnlLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

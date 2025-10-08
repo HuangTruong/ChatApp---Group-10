@@ -69,5 +69,26 @@ namespace ChatApp
             pnlLogin.Left = (this.ClientSize.Width - pnlLogin.Width) / 2;
             pnlLogin.Top = (this.ClientSize.Height - pnlLogin.Height) / 2;
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            register registerForm = new register();
+            registerForm.Tag = this;
+            registerForm.Show();
+            this.Hide();
+        }
+
+        private void lnkForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword forgotPasswordForm = new ForgotPassword();
+            forgotPasswordForm.Tag = this;
+            forgotPasswordForm.Show();
+            this.Hide();
+        }
     }
 }

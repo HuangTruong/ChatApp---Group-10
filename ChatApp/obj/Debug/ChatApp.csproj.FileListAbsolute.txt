@@ -24,3 +24,7 @@ C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.csproj.Up2Date
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.exe
 C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.pdb
+C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.register.resources
+C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.ForgotPassword.resources
+C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatApp.VerifyCode.resources
+C:\Users\Hoang\Source\Repos\ChatApp---Group-10\ChatApp\obj\Debug\ChatAppneeus.ResetPassword.resources

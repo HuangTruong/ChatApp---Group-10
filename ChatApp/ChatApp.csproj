@@ -75,11 +75,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForgetPassword.cs">
+    <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgetPassword.Designer.cs">
-      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyCode.Designer.cs">
+      <DependentUpon>VerifyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -95,8 +107,14 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ForgetPassword.resx">
-      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyCode.resx">
+      <DependentUpon>VerifyCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

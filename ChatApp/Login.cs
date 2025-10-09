@@ -6,7 +6,6 @@ using FireSharp.Response;
 
 namespace ChatApp
 {
-    
     public partial class Login : Form
     {
         private IFirebaseClient firebaseClient;
@@ -41,14 +40,17 @@ namespace ChatApp
         private void picShowPassword_Click(object sender, EventArgs e)
         {
             isPasswordVisible = !isPasswordVisible;
+
             if (isPasswordVisible)
             {
+                // Hiện mật khẩu
                 txtPassword.PasswordChar = '\0';
                 picShowPassword.Image = Properties.Resources.eye_open;
                 chkShowPassword.Checked = true;
             }
             else
             {
+                // Ẩn mật khẩu
                 txtPassword.PasswordChar = '●';
                 picShowPassword.Image = Properties.Resources.eye_close;
                 chkShowPassword.Checked = false;
@@ -69,6 +71,36 @@ namespace ChatApp
                 picShowPassword.Image = Properties.Resources.eye_close;
                 isPasswordVisible = false;
             }
+        }
+
+        // Canh giữa panel đăng nhập
+        private void pnlLogin_Paint(object sender, PaintEventArgs e)
+        {
+            pnlLogin.Left = (this.ClientSize.Width - pnlLogin.Width) / 2;
+            pnlLogin.Top = (this.ClientSize.Height - pnlLogin.Height) / 2;
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        // Mở form Đăng ký
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            var registerForm = new Register(); 
+            registerForm.Tag = this;
+            registerForm.Show();
+            this.Hide();
+        }
+
+        // Mở form Quên mật khẩu
+        private void lnkForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var forgotPasswordForm = new ForgotPassword();
+            forgotPasswordForm.Tag = this;
+            forgotPasswordForm.Show();
+            this.Hide();
         }
 
        
@@ -92,9 +124,7 @@ namespace ChatApp
 
             try
             {
-                
                 FirebaseResponse userResponse = await firebaseClient.GetAsync($"users/{taiKhoan}");
-
                 if (userResponse.Body == "null")
                 {
                     MessageBox.Show("Tài khoản không tồn tại!", "Lỗi",
@@ -102,10 +132,8 @@ namespace ChatApp
                     return;
                 }
 
-                
-                var user = userResponse.ResultAs<User>();
-
-                if (user.MatKhau != matKhau)
+                var user = userResponse.ResultAs<UserDto>();
+                if (user == null || user.MatKhau != matKhau)
                 {
                     MessageBox.Show("Mật khẩu không đúng!", "Lỗi",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -115,31 +143,21 @@ namespace ChatApp
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                txtUsername.Text = "";
-                txtPassword.Text = "";
+                txtUsername.Clear();
+                txtPassword.Clear();
+
+                // chuyển tiếp
                 this.Hide();
+                // new MainForm().Show(); // nếu có form chính, mở ở đây
             }
-            
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi đăng nhập: " + ex.Message, "Lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            Register f = new Register();
-            f.ShowDialog();
-        }
-
-        private void lnkForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ForgetPassword f = new ForgetPassword();
-            f.ShowDialog();
-        }
     }
-    public class User
+    public class UserDto
     {
         public string Username { get; set; }
         public string MatKhau { get; set; }

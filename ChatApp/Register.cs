@@ -64,7 +64,7 @@ namespace ChatApp
             string matKhau = txtMatKhau.Text;
             string xacNhanMatKhau = txtXacNhan.Text;
             string email = txtEmail.Text;
-            string encodedEmail = Convert.ToBase64String(Encoding.UTF8.GetBytes(email));
+            //string encodedEmail = Convert.ToBase64String(Encoding.UTF8.GetBytes(email));
             string ten = txtTen.Text;
             string ngaySinh = dtNgaySinh.Text;
             string gioiTinh = cbGioiTinh.Text;
@@ -99,7 +99,7 @@ namespace ChatApp
                     return;
                 }
 
-                var emailExistsResponse = await firebaseClient.GetAsync($"emails/{encodedEmail}");
+                var emailExistsResponse = await firebaseClient.GetAsync($"emails/{email}");
                 if (emailExistsResponse.Body != "null")
                 {
                     MessageBox.Show("Email đã tồn tại!", "Lỗi",
@@ -119,14 +119,14 @@ namespace ChatApp
                 {
                     TaiKhoan = taiKhoan,
                     MatKhau = matKhau,
-                    Email = encodedEmail,
+                    Email = email,
                     Username = ten,
                     Ngaysinh = ngaySinh,
                     Gioitinh = gioiTinh
                 };
 
                 await firebaseClient.SetAsync($"users/{taiKhoan}", newUser);
-                await firebaseClient.SetAsync($"emails/{encodedEmail}", true);
+                await firebaseClient.SetAsync($"emails/{email}", true);
                 await firebaseClient.SetAsync($"Username/{ten}", true);
                 
 

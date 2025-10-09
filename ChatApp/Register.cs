@@ -22,7 +22,7 @@ namespace ChatApp
             IFirebaseConfig config = new FirebaseConfig
             {
                 AuthSecret = "PFejsR6CHWL2zIGqFqZ1w3Orw0ljzeHnHubtuQN8",
-                BasePath = "https://databeseaccess-default-rtdb.firebaseio.com/"
+                BasePath = "https://fir-client-1d344-default-rtdb.firebaseio.com/"
             };
 
             firebaseClient = new FireSharp.FirebaseClient(config);
@@ -128,7 +128,7 @@ namespace ChatApp
                 await firebaseClient.SetAsync($"users/{taiKhoan}", newUser);
                 await firebaseClient.SetAsync($"emails/{encodedEmail}", true);
                 await firebaseClient.SetAsync($"Username/{ten}", true);
-                await firebaseClient.SetAsync($"Password/{matKhau}", true);
+                
 
                 MessageBox.Show("Đăng ký thành công!", "Thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -146,6 +146,11 @@ namespace ChatApp
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Register_Load_2(object sender, EventArgs e)
+        {
+
         }
     }
 
